@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athletes</title>
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="asset/css/athletes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+
+
+  </style>
+
+</head>
+
+<body>
+  <section id="home">
+    <nav class="navbar navbar-expand-md bg-info sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="asset/img/olympics.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catagory
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="athelets.html">Athelets</a></li>
+                  <li><a class="dropdown-item" href="games.html">Games</a></li>
+                  <li><a class="dropdown-item" href="#">Historic events</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- navbar end -->
+
+  <!-- ================= -->
+
+  <!--gallery card section start -->
+  <section id="athelets">
+    <div class="container">
+      <div class="row" id="mycards">
+        <!-- Cards will be appended here -->
+      </div>
+    </div>
+  </section>
+  <!-- gallery card section  end -->
+  <!-- feedback start -->
+  <footer id="Feedback">
+    <div class="con">
+       <div class="footer-col">
+          <h4>Contact us</h4>
+        <p>Emailinfo@example.com</p>
+        <p>Phone:+92 3244869065</p>
+        <p>Address: 45/1 Street no 89</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul class="list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="faqs.html">Faqs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow Us</h5>
+          <ul class="social-icons">
+            <li><a href=""><i class="fa-brands fa-chrome"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-bar">
+    <p>&copy; 2024 your olympic website. All right reserved</p>
+  </div>
+  <!-- feedback end -->
+  <script src="asset/js/jquery-3.7.1.min.js"></script>
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/js/fetch.js"></script>
+  <script>
+    for (var a = 0; a < athletes.length; a++) {
+      document.getElementById("mycards").innerHTML += `
+                <div class="col cardsdata">
+                    <div class="card" style="width: 18rem;">
+                        <img src="${athletes[a].img}" class="card-img-top" alt="${athletes[a].name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${athletes[a].name}</h5>
+                            <hr>
+                            <p class="card-text">${athletes[a].dec}</p>
+                        </div>
+                    </div>
+                </div>
+                `;
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Attach a click event handler to the cardsdata elements
+      $(".cardsdata").click(function () {
+        // Toggle the visibility of the .card-text element within the clicked .cardsdata
+        $(this).find(".card-text").slideToggle("slow");
+      });
+    });
+  </script>
+</body>
+
+</html>

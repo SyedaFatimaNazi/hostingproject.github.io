@@ -1,0 +1,218 @@
+/*navbar css start*/
+nav {
+  /* width: 100%;
+    height: 80px; */
+  background: linear-gradient(
+    rgb(0, 203, 230),
+    rgb(79, 240, 252),
+    rgb(0, 203, 230)
+  );
+}
+
+.container-fluid {
+  display: flex;
+    align-items: center;
+    color: rgb(255, 251, 251);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 50px;
+}
+
+.navbar-toggler {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(49, 221, 233);
+}
+#offcanvasNavbarLabel {
+  font-weight: bold;
+}
+#offcanvasNavbar {
+  background-color: rgb(2, 191, 204);
+}
+.offcanvas,
+.offcanvas a {
+  color: white;
+}
+.dropdown-menu a {
+  color: black;
+}
+.dropdown-menu {
+  background-image: linear-gradient(
+    rgb(0, 158, 179),
+    rgb(79, 240, 252),
+    rgb(0, 158, 179)
+  );
+}
+/*navbar css end*/
+
+/*athletes css start*/
+.container {
+
+  margin-top: 100px;
+}
+
+.row {
+  gap: 30px;
+}
+
+:root {
+  --first: #f1f1f1;
+  --second: #ff2333;
+}
+
+.navbar {
+  background-color: var(--first);
+}
+
+.card {
+  /* min-height:; */
+  height: auto;
+  background-image: linear-gradient(rgb(96, 210, 255),
+      rgb(182, 253, 255));
+}
+
+.card img{
+  height: 250px;
+}
+
+.card-body hr {
+  height: 4px;
+  /* Set the height/thickness of the line */
+  background-color: #000;
+  /* Set the color of the line */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 15px;
+  /* Ensure initial alignment is centered */
+}
+
+.card-text {
+  display: none;
+}
+/*athletes css end*/
+  /*feedback css end*/
+  #feedback{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    width: 99.7%;
+   }
+footer {
+    background-color: black;
+    padding-top: 50px;
+    margin-top: 30px;
+}
+.con {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-col {
+    width: 33.3%;
+}
+h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-col p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+}
+.footer-col ul {
+    text-align: center;
+}
+.list {
+    padding: 0;
+    
+}
+.list a{
+    color: white;
+    font-size: 20px;
+}
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list a::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before {
+    width: 70px;
+}
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 230px;
+ 
+}
+.social-icons li {
+    display: inline;
+   
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+ margin-left: 30px;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    font-size: 25px;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #f18930;
+}
+.social-icons i:hover {
+    color: #f18930;
+}
+.bottom-bar {
+    background: blue;
+    text-align: center;
+    padding: 10px 0;
+}
+.bottom-bar p {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 19px;
+    padding: 7px;
+}
+ /* feedback css end */

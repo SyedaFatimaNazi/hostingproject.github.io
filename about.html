@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="asset/css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--navbar start-->
+<div class="container-fluid">
+  
+  <nav class="navbar navbar-expand-md bg-info sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="asset/img/olympics.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catagory
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="athelets.html">Athelets</a></li>
+                <li><a class="dropdown-item" href="games.html">Games</a></li>
+                <li><a class="dropdown-item" href="#">Historic events</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!--navbar end-->
+  <!-- ================= -->
+  <!-- about section start-->
+
+
+    <div class="container-fluid" id="about">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <img src="asset/img/OIP.jpeg" alt="Rowing" class="img-fluid">
+        </div>
+        <div class="col-md-6 col-12">
+          <h1>Olympics</h1>
+          <p>
+            The opening ceremony to signal the official start of the Paris 2024 Olympics will be held on Friday, 26 July.
+            But the sporting action actually begins on Wednesday, 24 July with pool matches in football, rugby sevens, handball and archery.
+            The ambitious opening ceremony will take place along the River Seine instead of in a stadium.
+            The first medals will be awarded a day later and competition will conclude on 11 August, with the closing ceremony later that evening.
+          </p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Detail
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">What is Rowing?</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Of all the games held throughout Greece, the Olympic Games were the most famous. Held every four years between August 6 and September 19, they occupied such an important place in Greek history that in late antiquity historians measured time by the interval between them—an Olympiad. The Olympic Games, like almost all Greek games, were an intrinsic part of a religious festival. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- about end -->
+
+  
+  <!-- footer start -->
+ 
+  <div class="container-fluid">
+
+<div class="row bg-dark">
+  <div class="col mt-5">
+    <h4>Contact us</h4>
+    <ul class="list">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="faqs.html">Faqs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  </div>
+  <div class="col mt-5">
+    <h4>Links</h4>
+          <ul class="list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="faqs.html">Faqs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+  </div>
+  <div class="col mt-5">
+    <ul class="social-icons">
+      <li><a href=""><i class="fa-brands fa-chrome"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+    </ul>
+  </div>
+
+    <div class="row bottom-bar">
+      <div class="col">
+        <p>&copy; 2024 your olympic website. All right reserved</p>
+
+      </div>
+    </div>
+  </div>
+ 
+  <!-- footer end -->
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+
+</html>

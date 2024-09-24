@@ -1,0 +1,110 @@
+
+/*navbar css start*/
+nav {
+  /* width: 100%;
+    height: 80px; */
+  background: linear-gradient(
+    rgb(0, 203, 230),
+    rgb(79, 240, 252),
+    rgb(0, 203, 230)
+  );
+}
+
+/* .container-fluid {
+  display: flex;
+    align-items: center;
+    color: rgb(255, 251, 251);
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+.navbar-brand img {
+  width: 100%;
+  height: 50px;
+}
+
+.navbar-toggler {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(49, 221, 233);
+}
+#offcanvasNavbarLabel {
+  font-weight: bold;
+}
+#offcanvasNavbar {
+  background-color: rgb(2, 191, 204);
+}
+.offcanvas,
+.offcanvas a {
+  color: white;
+}
+.dropdown-menu a {
+  color: black;
+}
+.dropdown-menu {
+  background-image: linear-gradient(
+    rgb(0, 158, 179),
+    rgb(79, 240, 252),
+    rgb(0, 158, 179)
+  );
+}
+/*navbar css end*/
+/* about css start */
+#about {
+  padding: 40px 20px;
+  background-color: lightblue; 
+ margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.col-md-6 {
+  flex: 1;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.btn-dark {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-dark:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+.modal-content {
+  border-radius: 8px; 
+}
+/* .modal-body{
+  color: #000000;
+} */
+
+/* about css end */

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <section id="home">
+      <nav class="navbar navbar-expand-md bg-info sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="asset/img/log.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    aria-current="page"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Catagory
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="athelets.html">Athelets</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="games.html">Games</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Historic events</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="feedback.html">Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- navbar end -->
+    <!-- ================= -->
+    <!--home page section start-->
+
+
+    <!-- <section id="home">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="asset/img/athletics 2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="asset/img/artistic swimming.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="asset/img/athletics 1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="ali">
+        <h1>Olympic</h1>
+        <h4>
+          “If you have elevated testosterone levels, it’s an unfair advantage
+          regardless of your body parts. Chromosomes affect muscle growth and
+          bone structure, while testosterone influences aggression and
+          strength.”
+        </h4>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                Polynesia
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              An island in French Polynesia that is about 9,800 miles from
+              Paris. It will break the record for the farthest Olympic medal
+              competition to be held outside the host.
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle2"
+                data-bs-toggle="modal"
+              >
+                Open second page
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModalToggle2"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                Olympics
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              The 2024 Summer Olympics, officially the Games of the XXXIII
+              Olympiad and officially branded as Paris 2024, is an international
+              multi-sport event taking place from 24 July to 11 August 2024 in …
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary"
+                data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal"
+              >
+                Back to first page
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mini">
+        <a
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          href="#exampleModalToggle"
+          role="button"
+          >Detail</a
+        >
+      </div>
+    </section> -->
+    <!--home page section end-->
+    <!-- feedback start -->
+
+    <footer id="Feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 footer-col">
+            <h4>Contact us</h4>
+            <p>Email: info@example.com</p>
+            <p>Phone: +92 3244869065</p>
+            <p>Address: 45/1 Street no 89</p>
+          </div>
+          <div class="col-md-4 col-sm-12 footer-col">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="faqs.html">Faqs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 footer-col">
+            <h4>Follow Us</h4>
+            <ul class="list-unstyled social-icons">
+              <li>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom-bar text-center py-3">
+      <p>&copy; 2024 your olympic website. All rights reserved</p>
+    </div>
+
+    <!--    
+ <footer id="Feedback">
+  <div class="con">
+     <div class="footer-col">
+        <h4>Contact us</h4>
+      <p>Emailinfo@example.com</p>
+      <p>Phone:+92 3244869065</p>
+      <p>Address: 45/1 Street no 89</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul class="list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="faqs.html">Faqs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Follow Us</h5>
+        <ul class="social-icons">
+          <li><a href=""><i class="fa-brands fa-chrome"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+    </div>
+  </div>
+</footer>
+<div class="bottom-bar">
+  <p>&copy; 2024 your olympic website. All right reserved</p>
+</div> -->
+    <!-- feedback end -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/fetch.js"></script>
+  </body>
+</html>

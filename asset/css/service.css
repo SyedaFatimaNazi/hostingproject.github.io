@@ -1,0 +1,49 @@
+/*navbar css start*/
+nav {
+    /* width: 100%;
+      height: 80px; */
+    background: linear-gradient(
+      rgb(0, 203, 230),
+      rgb(79, 240, 252),
+      rgb(0, 203, 230)
+    );
+  }
+  
+  .container-fluid {
+    display: flex;
+      align-items: center;
+      color: rgb(255, 251, 251);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar-brand img {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .navbar-toggler {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(49, 221, 233);
+  }
+  #offcanvasNavbarLabel {
+    font-weight: bold;
+  }
+  #offcanvasNavbar {
+    background-color: rgb(2, 191, 204);
+  }
+  .offcanvas,
+  .offcanvas a {
+    color: white;
+  }
+  .dropdown-menu a {
+    color: black;
+  }
+  .dropdown-menu {
+    background-image: linear-gradient(
+      rgb(0, 158, 179),
+      rgb(79, 240, 252),
+      rgb(0, 158, 179)
+    );
+  }
+  /*navbar css end*/
